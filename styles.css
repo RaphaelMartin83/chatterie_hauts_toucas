@@ -491,7 +491,6 @@ button {
   line-height: 1.7;
 }
 
-.category-card > a,
 .category-card__link {
   display: inline-flex;
   align-items: center;
@@ -503,7 +502,6 @@ button {
   font-weight: 600;
 }
 
-.category-card > a span,
 .category-card__link span {
   color: var(--clay);
   font-size: 16px;
@@ -571,6 +569,72 @@ button {
   margin-top: 14px;
 }
 
+.carousel {
+  margin-top: 24px;
+}
+
+.carousel__figure {
+  margin: 0;
+}
+
+.carousel__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--paper-deep);
+}
+
+.carousel__caption {
+  overflow: hidden;
+  padding-top: 10px;
+  color: var(--ink-soft);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.carousel__button {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 17px;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.carousel__button:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.carousel__counter {
+  color: var(--ink-soft);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.carousel__status {
+  margin: 0;
+  padding: 18px;
+  background: rgba(36, 53, 45, 0.05);
+  color: var(--ink-soft);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
 .kittens {
   padding-top: 125px;
   padding-bottom: 115px;
@@ -593,47 +657,6 @@ button {
   color: var(--ink-soft);
   font-size: 12px;
   line-height: 1.9;
-}
-
-.kitten-grid {
-  display: grid;
-  grid-template-columns: 1.18fr 0.82fr;
-  gap: 22px;
-  align-items: start;
-  margin-top: 56px;
-}
-
-.kitten-card {
-  margin: 0;
-}
-
-.kitten-card--large {
-  margin-top: 64px;
-}
-
-.kitten-card img {
-  height: clamp(250px, 34vw, 440px);
-  object-fit: cover;
-}
-
-.kitten-card--large img {
-  object-position: center 48%;
-}
-
-.kitten-card__caption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 15px;
-  border-top: 1px solid var(--line);
-  color: var(--ink-soft);
-  font-size: 10px;
-  letter-spacing: 0.04em;
-}
-
-.kitten-card__arrow {
-  color: var(--clay);
-  font-size: 17px;
 }
 
 .kittens__bottom {
@@ -992,18 +1015,8 @@ button:focus-visible {
     max-width: 450px;
   }
 
-  .kitten-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    margin-top: 35px;
-  }
-
-  .kitten-card--large {
-    margin-top: 0;
-  }
-
-  .kitten-card img {
-    height: min(78vw, 400px);
+  .carousel__image {
+    aspect-ratio: 4 / 3;
   }
 
   .kittens__bottom {
