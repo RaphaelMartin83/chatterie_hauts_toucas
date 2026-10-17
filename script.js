@@ -107,7 +107,7 @@ function renderGallery(gallery, photos) {
 }
 
 if (galleries.length > 0) {
-  fetch("/galleries.json", { cache: "no-store" })
+  fetch(new URL("galleries.json", document.baseURI), { cache: "no-store" })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Gallery request failed with status ${response.status}.`);
