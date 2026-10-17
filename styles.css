@@ -343,8 +343,8 @@ button {
 .intro__copy {
   padding-bottom: 5px;
   color: var(--ink-soft);
-  font-size: 12px;
-  line-height: 1.9;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .intro__copy p {
@@ -1015,7 +1015,7 @@ button:focus-visible {
 
   .intro__copy {
     max-width: 490px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .intro__image-wrap {
