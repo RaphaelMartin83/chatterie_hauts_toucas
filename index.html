@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -41,9 +41,9 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="#chatons">Nos chatons</a>
         <a href="#nos-femelles">Nos femelles</a>
         <a href="#mariages">Mariages</a>
-        <a href="#chatons">Nos chatons</a>
         <a class="nav-contact" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -68,7 +68,7 @@
       <section class="intro section-pad" id="histoire" aria-labelledby="intro-title">
         <div class="intro__label">
           <span class="eyebrow">La vie à la chatterie</span>
-          <span class="section-index">01 <i>—</i> 04</span>
+          <span class="section-index">01 <i>—</i> 03</span>
         </div>
         <div class="intro__main">
           <h2 class="section-title" id="intro-title">Une histoire de <em>famille,</em><br>de patience et de ronrons.</h2>
@@ -103,25 +103,40 @@
           <p>Découvrez les grandes étapes de la vie à la chatterie et les compagnons qui la font vivre.</p>
         </div>
         <div class="category-grid">
-          <a class="category-card" href="#nos-femelles">
+          <a class="category-card category-card--featured" href="#chatons">
             <span class="category-card__number">01</span>
+            <h3>Nos chatons</h3>
+            <p>Découvrez leur évolution et les informations sur l’adoption.</p>
+            <span class="category-card__link">Voir nos chatons <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="category-card" href="#nos-femelles">
+            <span class="category-card__number">02</span>
             <h3>Nos femelles</h3>
             <p>Découvrez les femelles qui partagent notre quotidien.</p>
             <span class="category-card__link">Découvrir nos femelles <span aria-hidden="true">↗</span></span>
           </a>
           <a class="category-card" href="#mariages">
-            <span class="category-card__number">02</span>
+            <span class="category-card__number">03</span>
             <h3>Mariages</h3>
             <p>Suivez les unions et les projets de portées de la chatterie.</p>
             <span class="category-card__link">Découvrir les mariages <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="category-card category-card--featured" href="#chatons">
-            <span class="category-card__number">03</span>
-            <h3>Nos chatons</h3>
-            <p>Découvrez leur évolution et les informations sur l’adoption.</p>
-            <span class="category-card__link">Voir nos chatons <span aria-hidden="true">↗</span></span>
-          </a>
         </div>
+        <section class="kittens section-pad" id="chatons" aria-labelledby="kittens-title">
+          <div class="kittens__heading">
+            <div>
+              <span class="eyebrow">Grandir en confiance</span>
+              <h2 class="section-title" id="kittens-title">Nos chatons</h2>
+            </div>
+            <p>Nos chatons grandissent auprès de nous et découvrent le monde à leur rythme. Nous serons heureux d’échanger avec vous sur une éventuelle adoption et sur les prochaines portées.</p>
+          </div>
+          <div class="carousel" data-gallery="nos-chatons" role="region" aria-label="Photos de nos chatons">
+            <p class="carousel__status" role="status" aria-live="polite">Chargement des photos…</p>
+          </div>
+          <div class="kittens__bottom">
+            <p>Départ à partir de 3 mois et une semaine, avec suivi vétérinaire, identification, pedigree et vaccinations.</p>
+          </div>
+        </section>
         <div class="category-details">
           <article class="category-detail" id="nos-femelles">
             <span class="category-detail__number">01 / Nos femelles</span>
@@ -145,23 +160,6 @@
               </div>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="kittens section-pad" id="chatons" aria-labelledby="kittens-title">
-        <div class="kittens__heading">
-          <div>
-            <span class="eyebrow">Grandir en confiance</span>
-            <h2 class="section-title" id="kittens-title">Nos chatons</h2>
-          </div>
-          <p>Nos chatons grandissent auprès de nous et découvrent le monde à leur rythme. Nous serons heureux d’échanger avec vous sur une éventuelle adoption et sur les prochaines portées.</p>
-        </div>
-        <div class="carousel" data-gallery="nos-chatons" role="region" aria-label="Photos de nos chatons">
-          <p class="carousel__status" role="status" aria-live="polite">Chargement des photos…</p>
-          </article>
-        </div>
-        <div class="kittens__bottom">
-          <p>Départ à partir de 3 mois et une semaine, avec suivi vétérinaire, identification, pedigree et vaccinations.</p>
         </div>
       </section>
 

@@ -640,6 +640,48 @@ button {
   padding-bottom: 115px;
 }
 
+.categories > .kittens {
+  width: calc(100% + 33.333333%);
+  margin-left: -16.666667%;
+  padding: 80px 12.5%;
+  background: var(--moss);
+  color: var(--paper);
+}
+
+.categories > .kittens .eyebrow {
+  color: #e9bd9f;
+}
+
+.categories > .kittens .section-title {
+  color: var(--paper);
+}
+
+.categories > .kittens .kittens__heading > p,
+.categories > .kittens .kittens__bottom > p,
+.categories > .kittens .carousel__caption,
+.categories > .kittens .carousel__counter {
+  color: rgba(248, 246, 240, 0.82);
+}
+
+.categories > .kittens .kittens__bottom {
+  border-color: rgba(248, 246, 240, 0.24);
+}
+
+.categories > .kittens .carousel__status {
+  background: rgba(248, 246, 240, 0.08);
+  color: var(--paper);
+}
+
+.categories > .kittens .carousel__button {
+  border-color: rgba(248, 246, 240, 0.38);
+  color: var(--paper);
+}
+
+.categories > .kittens .carousel__button:hover {
+  background: var(--paper);
+  color: var(--moss);
+}
+
 .kittens__heading {
   display: flex;
   align-items: end;
@@ -808,6 +850,13 @@ button:focus-visible {
   .category-detail {
     grid-template-columns: 0.45fr 1fr;
     gap: 5%;
+  }
+
+  .categories > .kittens {
+    width: calc(100% + 21.95122%);
+    margin-left: -10.97561%;
+    padding-right: 9%;
+    padding-left: 9%;
   }
 
 }
@@ -991,6 +1040,15 @@ button:focus-visible {
     align-items: flex-start;
     flex-direction: column;
     gap: 18px;
+  }
+
+  .categories > .kittens {
+    padding-top: 55px;
+    width: calc(100% + 16.27907%);
+    margin-left: -8.139535%;
+    padding-right: 7%;
+    padding-bottom: 70px;
+    padding-left: 7%;
   }
 
   .category-grid {
