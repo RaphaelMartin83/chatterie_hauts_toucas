@@ -9,7 +9,7 @@ Déposez vos photos directement dans le dossier correspondant :
 - `mariages/` — mariages
 - `nos-chatons/` — chatons
 
-Formats pris en charge : JPG, JPEG, PNG, WebP, GIF et AVIF. Placez les photos directement dans le dossier (sans sous-dossier). Elles apparaissent dans l’ordre alphabétique de leur nom de fichier.
+Formats pris en charge : JPG, JPEG, PNG, WebP, GIF et AVIF. Placez les photos directement dans le dossier (sans sous-dossier). Elles apparaissent dans l’ordre alphabétique de leur nom de fichier. Nommez chaque image avec le nom du chat : les espaces sont acceptés et l’extension (`.jpg`, `.png`, etc.) ne sera pas affichée sous la photo. Par exemple, `Maine Coon de Provence.jpg` s’affichera comme « Maine Coon de Provence ».
 
 Après avoir ajouté ou supprimé des photos, générez la liste statique des galeries :
 

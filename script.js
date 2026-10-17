@@ -85,9 +85,10 @@ function renderGallery(gallery, photos) {
   const showPhoto = () => {
     const photoUrl = photos[currentIndex];
     const fileName = decodeURIComponent(photoUrl.split("/").pop() ?? photoUrl);
+    const catName = fileName.replace(/\.[^.]+$/, "");
     image.src = photoUrl;
-    image.alt = `${gallery.getAttribute("aria-label")} : ${fileName}`;
-    caption.textContent = fileName;
+    image.alt = `${gallery.getAttribute("aria-label")} : ${catName}`;
+    caption.textContent = catName;
     counter.textContent = `${currentIndex + 1} / ${photos.length}`;
   };
 
