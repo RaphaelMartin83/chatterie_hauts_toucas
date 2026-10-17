@@ -160,8 +160,8 @@ button {
 }
 
 .hero__image {
-  background-image: url("https://www.chatteriedupredelafont.com/wp-content/uploads/2022/06/maine-coon-var-.jpg");
-  background-position: center 44%;
+  background-image: url("page-accueil.jpg");
+  background-position: center top;
   background-size: cover;
   transform: scale(1.01);
 }
@@ -584,6 +584,11 @@ button {
   background: var(--paper-deep);
 }
 
+#nos-femelles .carousel__image {
+  aspect-ratio: 4 / 3;
+  object-position: center top;
+}
+
 .carousel__caption {
   overflow: hidden;
   padding-top: 10px;
@@ -951,7 +956,7 @@ button:focus-visible {
   }
 
   .hero__image {
-    background-position: 58% center;
+    background-position: 52% top;
   }
 
   .hero__shade {

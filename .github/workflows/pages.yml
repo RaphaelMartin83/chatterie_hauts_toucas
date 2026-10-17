@@ -26,7 +26,7 @@ jobs:
       - name: Prepare static website
         run: |
           mkdir _site
-          cp index.html styles.css script.js galleries.json _site/
+          cp index.html styles.css script.js galleries.json page-accueil.jpg _site/
           cp -R nos-femelles mariages nos-chatons _site/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
