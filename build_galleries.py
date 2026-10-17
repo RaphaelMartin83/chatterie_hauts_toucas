@@ -4,7 +4,7 @@ from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parent
-GALLERY_DIRS = ("nos-males", "nos-femelles", "mariages", "nos-chatons")
+GALLERY_DIRS = ("nos-femelles", "mariages", "nos-chatons")
 IMAGE_EXTENSIONS = {".avif", ".gif", ".jpeg", ".jpg", ".png", ".webp"}
 
 

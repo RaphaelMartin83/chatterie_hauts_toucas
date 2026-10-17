@@ -4,7 +4,6 @@
 
 Déposez vos photos directement dans le dossier correspondant :
 
-- `nos-males/` — mâles
 - `nos-femelles/` — femelles
 - `mariages/` — mariages
 - `nos-chatons/` — chatons
@@ -23,7 +22,7 @@ Par exemple, pour publier une mise à jour des photos :
 
 ```sh
 python3 build_galleries.py
-git add galleries.json nos-males nos-femelles mariages nos-chatons
+git add galleries.json nos-femelles mariages nos-chatons
 git commit -m "Update cat gallery photos"
 git push
 ```
@@ -47,7 +46,7 @@ Dans les paramètres du dépôt GitHub, ouvrez **Settings → Pages** et choisis
 Pour publier cette configuration pour la première fois, incluez également le workflow et le script de génération dans votre commit :
 
 ```sh
-git add .github/workflows/pages.yml build_galleries.py galleries.json README.md index.html script.js server.py styles.css nos-males nos-femelles mariages nos-chatons
+git add .github/workflows/pages.yml build_galleries.py galleries.json README.md index.html script.js server.py styles.css nos-femelles mariages nos-chatons
 git commit -m "Configure GitHub Pages deployment"
 git push
 ```

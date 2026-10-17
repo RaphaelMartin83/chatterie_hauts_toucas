@@ -714,11 +714,26 @@ button {
   font-size: 10px;
 }
 
+.footer-note {
+  text-align: center;
+}
+
+.footer-note p {
+  margin: 0 0 5px;
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+
+.footer-note small {
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
 .footer-contact > a:hover {
   color: var(--clay);
 }
 
-.site-footer > p span {
+.footer-note p span {
   margin-left: 5px;
   color: var(--clay);
 }
@@ -1045,10 +1060,9 @@ button:focus-visible {
     width: 100%;
   }
 
-  .site-footer > p {
+  .footer-note {
     order: 2;
     width: 100%;
-    margin: 0;
   }
 }
 
